@@ -12,9 +12,11 @@ def get_table_from_user(file_path):
     try:
         df = pd.read_excel(file_path, engine='openpyxl')
 
-        print(f"Успешно загружен файл: {file_path}")
-        print(f"Количество строк: {len(df)}, столбцов: {len(df.columns)}")
-        print(df)
+        # print(f"Успешно загружен файл: {file_path}")
+        # print(f"Количество строк: {len(df)}, столбцов: {len(df.columns)}")
+        # print(df)
+        # print(df.columns)
+        return df
 
 
         # print("\nОбработка строк:")
@@ -28,6 +30,4 @@ def get_table_from_user(file_path):
         print(f"Ошибка: {e}")
 
 
-file_path = input("Введите путь к Excel-файлу: ").strip()
-get_table_from_user(file_path)
 # C:\Users\vladc\Downloads\ts.xlsx
