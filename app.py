@@ -69,6 +69,7 @@ plt.ylabel('Спектральная освещенность (Вт·м⁻²·н
 plt.legend(loc='upper right', fontsize=9)
 plt.grid(alpha=0.2)
 plt.xlim(380, 1100)
+
 plt.ylim(0, 1.2 * max(solar_spectrum.max(), synthetic_spectrum.max()))
 
 # Сохранение и отображение
